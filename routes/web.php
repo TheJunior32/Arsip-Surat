@@ -8,8 +8,12 @@ use App\Http\Controllers\SuratKeluarController;
 use App\Http\Controllers\Auth\FirebaseLoginController;
 
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/login');
 });
 
 Route::middleware(['auth'])->group(function () {
